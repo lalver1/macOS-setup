@@ -1,0 +1,13 @@
+# Setup Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Setup Starship prompt
+eval "$(starship init bash)"
+
+# Use pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+# Use Bash completion
+source "${HOMEBREW_PREFIX}/etc/profile.d/bash_completion.sh"

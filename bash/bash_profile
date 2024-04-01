@@ -1,0 +1,5 @@
+# Use the system config if it exists.
+[ -f /etc/bashrc ] && . /etc/bashrc
+
+# Use local Bash config if any.
+[ -f ~/.bashrc ] && . ~/.bashrc
